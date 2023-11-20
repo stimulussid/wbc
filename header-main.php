@@ -111,15 +111,16 @@
 
                                 </li>
 
-                                <li class="dropdown"><a href="schedule.html">Business Conclave</a>
+                                <li class="dropdown">
+                                    <a href="schedule.html">Business Conclave</a>
 
                                     <ul>
 
-                                        <li><a href="schedule.html">WBC Chapter 3</a></li>
+                                        <li><a href="chapter-3.php">WBC Chapter 3</a></li>
 
-                                        <li><a href="event-detail.html">WBC Chapter 2</a></li>
+                                        <li><a href="chapter-2.php">WBC Chapter 2</a></li>
 
-                                        <li><a href="buy-ticket.html">WBC Chapter 1</a></li>
+                                        <li><a href="chapter-1.php">WBC Chapter 1</a></li>
 
                                     </ul>
 
