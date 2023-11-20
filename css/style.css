@@ -122,7 +122,7 @@ Last Change:    12/9/2019
 
 body {
 	font-size:14px;
-	color:#777777;
+	color:#000000;
 	line-height:1.7em;
 	font-weight:400;
 	background:#ffffff;
@@ -165,7 +165,7 @@ p,.text{
 	position:relative;
 	font-size: 16px;
 	line-height: 26px;
-	color: #888888;
+	color: #000000;
 	font-weight: 400;	
 }
 
@@ -174,6 +174,10 @@ p,.text{
 	max-width:1200px;
 	padding:0px 15px;
 	margin:0 auto;
+}
+
+.container {
+	max-width: 1200px;
 }
 
 .panels-details .auto-container {
@@ -552,7 +556,7 @@ color:#ffffff;
 	position: relative;
 	font-size: 16px;
 	line-height: 30px;
-	color: #888888;
+	color: #000000;
 	font-weight: 400;
 	padding-left: 25px;
 	margin-bottom: 10px;
@@ -873,7 +877,7 @@ img{
 
 .sec-title{
 	position:relative;
-	margin-bottom:70px;
+	margin-bottom: 50px;
 }
 
 .sec-title .title{
@@ -899,19 +903,21 @@ img{
 }
 
 .sec-title h2{
-	position:relative;
-	display: inline-block;
-	font-size:48px;
-	line-height:1.2em;
-	color:#1e1f36;
-	font-weight:700;
+	position: relative;
+    display: inline-block;
+    font-size: 38px;
+    line-height: 1.2em;
+    color: #1e1f36;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .sec-title .text{
 	position: relative;
 	font-size: 16px;
 	line-height: 28px;
-	color: #888888;
+	color: #000000;
 	margin-top: 30px;
 }
 
@@ -2748,7 +2754,7 @@ img{
 
 .about-section-two .about-block .text{
 	font-size: 16px;
-	color: #888888;
+	color: #000000;
 	line-height: 1.2em;
 	font-weight: 500;
 }
@@ -2991,7 +2997,7 @@ img{
 	display: block;
 	font-size: 15px;
 	line-height: 24px;
-	color: #888888;
+	color: #000000;
 	font-weight: 400;
 	margin-bottom: 25px;
 	cursor: default;
@@ -3205,7 +3211,7 @@ img{
 	display: block;
 	font-size: 15px;
 	line-height: 24px;
-	color: #888888;
+	color: #000000;
 	font-weight: 400;
 	cursor: default;
 }
@@ -3387,7 +3393,7 @@ img{
 	display: block;
 	font-size: 14px;
 	line-height: 24px;
-	color: #888888;
+	color: #000000;
 	font-weight: 400;
 	cursor: default;
 }
@@ -3532,7 +3538,7 @@ img{
 
 .speakers-section{
 	position: relative;
-	padding: 120px 0 90px;
+	padding: 50px 0 50px;
 }
 
 .speakers-section:before{
@@ -3581,6 +3587,8 @@ img{
 .speaker-block .image-box .image img{
 	display: block;
 	width: 100%;
+    height: 250px;
+    object-fit: cover;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
@@ -3640,13 +3648,13 @@ img{
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
-	padding: 0 40px;
+	padding: 0 30px;
 }
 
 .speaker-block .info-box .name{
 	position: relative;
 	display: block;
-	font-size: 22px;
+	font-size: 16px;
 	line-height: 1.2em;
 	color: #ffffff;
 	font-weight: 700;
@@ -3695,8 +3703,8 @@ img{
 .speaker-block .info-box .designation{
 	position: relative;
 	display: block;
-	font-size: 13px;
-	line-height: 30px;
+	font-size: 12px;
+	line-height: 1.2em;
 	color: #ffffff;
 	font-weight: 400;
 	margin-bottom: 15px;
@@ -4281,7 +4289,7 @@ img{
 	position: relative;
 	font-size: 16px;
 	line-height: 1.6em;
-	color: #888888;
+	color: #000000;
 	margin-bottom: 30px;
 }
 
@@ -4314,7 +4322,7 @@ img{
 
 .schedule-section{
 	position: relative;
-	padding: 120px 0 100px;
+	padding: 50px 0 50px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -4612,7 +4620,7 @@ img{
 	position: relative;
 	font-size: 16px;
 	line-height: 26px;
-	color: #888888;
+	color: #000000;
 	margin-bottom: 15px;
 }
 
@@ -4905,7 +4913,7 @@ img{
 	}
   
 	.owl-stage-outer {
-	  padding: 30px 0;
+	  padding: 0;
 	}
   
 	.owl-nav {
@@ -5023,6 +5031,13 @@ button.owl-dot {
 	height: auto;
 }
 
+.event-detail .image-box.social-c-suite .image img{
+	display: block;
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
 .event-detail .content-box{
 	position: relative;
 }
@@ -5094,14 +5109,15 @@ button.owl-dot {
 	position: relative;
 	display: block;
 	font-size: 16px;
-	line-height: 30px;
-	color: #888888;
+	line-height: 1.6;
+	color: #000000;
 	font-weight: 400;
 	margin-bottom: 30px;
 }
 
 .event-detail .two-column{
 	position: relative;
+	padding: 10px 0 10px;
 }
 
 .event-detail .two-column .column{
@@ -5124,11 +5140,20 @@ button.owl-dot {
 	color: #222222;
 	font-weight: 500;
 	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 0;
+}
+
+.event-detail .two-column h5{
+	font-size: 18px;
+	line-height: 1.2em;
+	color: #222222;
+	font-weight: 500;
+	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 .sponsors {
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 
 .sponsors .sponsors-outer .image-box {
@@ -5155,7 +5180,7 @@ button.owl-dot {
 
 .pricing-section{
 	position: relative;
-	padding: 120px 0 80px;
+	padding: 50px 0 50px;
 	overflow: hidden;
 }
 
@@ -5990,7 +6015,7 @@ button.owl-dot {
 	position:relative;
 	font-size:16px;	
 	line-height: 26px;
-	color:#888888;
+	color:#000000;
 }
 
 .accordion-box .block .content p:last-child{
@@ -6092,7 +6117,7 @@ button.owl-dot {
 .why-choose-us{
 	position: relative;
 	background-color: #fafafa;
-	padding: 120px 0 70px;
+	padding: 50px 0 50px;
 }
 
 .why-choose-us .image-column{
@@ -6427,7 +6452,7 @@ button.owl-dot {
 .event-info-tabs .tabs-content .text{
 	font-size: 16px;
 	line-height: 28px;
-	color: #888888;
+	color: #000000;
 	max-width: 470px;
 }
 
@@ -6505,8 +6530,6 @@ button.owl-dot {
 }
 
 
-
-
 /*** 
 
 ====================================================================
@@ -6571,7 +6594,7 @@ button.owl-dot {
 	display: block;
 	font-size: 20px;
 	line-height: 36px;
-	color: #888888;
+	color: #000000;
 	font-weight: 400;
 	max-width: 700px;
 	margin: 0 auto 25px;
@@ -6722,7 +6745,7 @@ button.owl-dot {
 	display: inline-block;
 	font-size: 14px;
 	line-height: 24px;
-	color: #777777;
+	color: #000000;
 	font-weight: 400;
 	margin-right: 25px;
 }
@@ -6760,7 +6783,7 @@ button.owl-dot {
 	position: relative;
 	font-size: 14px;
 	line-height: 27px;
-	color: #888888;
+	color: #000000;
 	font-weight: 400;
 	margin-bottom: 20px;
 }
@@ -6881,7 +6904,7 @@ button.owl-dot {
 	font-size: 16px;
 	line-height: 30px;
 	margin-bottom: 30px;
-	color: #888888;
+	color: #000000;
 }
 
 .blog-single .lower-content blockquote{
@@ -7029,7 +7052,7 @@ button.owl-dot {
 	display: block;
 	font-size: 16px;
 	line-height: 30px;
-	color: #888888;
+	color: #000000;
 	font-weight: 400;
 	margin-bottom: 25px;
 }
@@ -7221,7 +7244,7 @@ button.owl-dot {
 	font-size:16px;
 	font-weight:400;
 	line-height: 26px;
-	color:#888888;
+	color:#000000;
 	margin-bottom: 50px;
 }
 
@@ -7659,7 +7682,7 @@ button.owl-dot {
 	line-height:33px;
 	padding:10px 20px;
 	height:52px;
-	color:#777777;
+	color:#000000;
 	font-size:15px;
 	background-color:#ffffff;
 	border:1px solid #aaaaaa;
@@ -7821,7 +7844,7 @@ button.owl-dot {
 	display: block;
 	font-size: 14px;
 	line-height: 24px;
-	color: #777777;
+	color: #000000;
 	font-weight: 400;
 	margin: 0;
 }
@@ -7848,7 +7871,7 @@ button.owl-dot {
 }
 
 .contact-page-section .contact-info li a{
-	color: #777777;
+	color: #000000;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
@@ -8565,6 +8588,130 @@ button.owl-dot {
 	filter: grayscale(0);
 }
 
+/* Social C Suite */
+
+.socialsuite-details {
+    position: relative;
+    padding: 0 0 45px;
+}
+
+.socialsuite-details h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 30px;
+}
+
+.socialsuite-details h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+	text-align: center;
+}
+
+.socialsuite-details ol,
+.socialsuite-details ul,
+.socialcsuite ol,
+.social-c-suite ol {
+	padding-left: 20px;
+}
+
+.socialsuite-details ul li,
+.socialcsuite ol li,
+.social-c-suite ol li {
+	list-style: square;
+	font-size: 16px;
+    line-height: 1.6;
+}
+
+.socialsuite-details ol li {
+	list-style: decimal;
+	font-size: 16px;
+    line-height: 1.6;
+}
+
+.socialsuite-details span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.socialsuite-details p {
+	text-align: justify;
+}
+
+.fa-quote-right:before {
+    content: "\f10d";
+}
+
+.socialcsuite h3 {
+	font-size: 28px;
+	line-height: 1;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.socialcsuite p {
+	text-align: justify;
+}
+
+.social-c-suite .lower-content blockquote {
+    position: relative;
+    padding: 35px 40px;
+    padding-left: 95px;
+    background-color: #fafafa;
+    margin: 45px 0;
+}
+
+.social-c-suite .lower-content blockquote .icon {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    font-size: 30px;
+    line-height: 1em;
+    color: #8d3804;
+}
+
+.social-c-suite .lower-content blockquote p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #7f8897;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.social-c-suite .lower-content blockquote cite {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+    color: #8d3804;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 30px;
+}
+
+.social-c-suite .lower-content blockquote cite:before {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    height: 1px;
+    width: 20px;
+    background-color: #8d3804;
+    content: "";
+}
+
+.social-c-suite h3 {
+	font-size: 28px;
+	line-height: 1;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 20px;
+}
 /* Video Player */
 
 .video-player-container {
@@ -9348,7 +9495,7 @@ button.owl-dot {
 }
 
 .error-section .text{
-	color:#888888;
+	color:#000000;
 	font-size:22px;
 	line-height: 1.4em;
 	margin-bottom:30px;
@@ -9403,7 +9550,7 @@ button.owl-dot {
 
 .sidebar-page-container{
 	position:relative;
-	padding:120px 0px 70px;
+	padding: 45px 0px 45px;
 }
 
 .sidebar-page-container .content-side,
@@ -9481,7 +9628,7 @@ button.owl-dot {
 	width:60px;
 	display:block;
 	font-size:18px;
-	color:#888888;
+	color:#000000;
 	line-height: 60px;
 	font-weight:normal;
 	background:#eeeeee;
@@ -9528,7 +9675,7 @@ button.owl-dot {
 	font-size:18px;
 	line-height:26px;
 	font-weight:600;
-	color:#888888;
+	color:#000000;
 	margin:0px;
 }
 
@@ -9707,7 +9854,7 @@ button.owl-dot {
 	display: inline-block;
 	font-size: 14px;
 	line-height: 24px;
-	color: #777777;
+	color: #000000;
 	font-weight: 400;
 	margin-left: 10px;
 }
@@ -9715,7 +9862,7 @@ button.owl-dot {
 .comments-area .comment-box .text{
 	font-size: 15px;
 	line-height: 26px;
-	color:#888888;
+	color:#000000;
 	font-weight: 400;
 }
 
@@ -9916,7 +10063,7 @@ button.owl-dot {
 	position: relative;
 	font-size: 14px;
 	line-height: 24px;
-	color: #888888;
+	color: #000000;
 }
 
 .ticket-form .form-group label:hover{
