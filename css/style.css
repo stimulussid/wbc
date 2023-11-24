@@ -706,7 +706,7 @@ color:#ffffff;
 	background-color: #ffffff;
 	background-position:center center; 
 	background-repeat:no-repeat; 
-	background-image:url(../images/icons/preloader.svg); 
+	background-image:url(../images/icons/award.gif); 
 	background-size:100px;
 }
 
@@ -714,7 +714,7 @@ color:#ffffff;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	content: "loading..";
+	content: "loading...";
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -808,6 +808,10 @@ img{
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
+}
+
+.page-title.chapter-2-banner {
+	padding: 205px 0;
 }
 
 .page-title h1{
@@ -1734,6 +1738,10 @@ img{
 	content: "";
 }
 
+.banner-carousel .slide-item.custom:before {
+	background-color: transparent;
+}
+
 .banner-carousel .content-box{
 	position: relative;
 }
@@ -1768,7 +1776,7 @@ img{
 
 .banner-carousel .content-box h2{
     display: block;
-    font-size: 74px;
+    font-size: 42px;
     line-height: 1.2em;
     color: #ffffff;
     font-weight: 700;
@@ -1785,6 +1793,117 @@ img{
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
+
+/* Form Popup */
+
+.popup .register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popup h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+	color: #8d3804;
+}
+
+.popup .form-inner {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.popup .form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.popup .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.popup .form-group input,
+.popup .form-group textarea {
+    width: calc(100% - 15px);
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 40px;
+}
+
+.popup .form-group .fa {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.popup .form-group textarea {
+    resize: vertical;
+}
+
+.popup .form-group .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.popup .form-group.text-right {
+    text-align: right;
+}
+
+.popup .theme-btn {
+    background-color: #8d3804;
+    color: #fff;
+    padding: 5px 15px;
+    border: 1px solid #8d3804;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup .theme-btn:hover {
+    background-color: transparent;
+    color: #8d3804;
+    padding: 5px 15px;
+    border: 1px solid #8d3804;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+}
+
+.popup {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	max-width: 400px;
+	width: 100%;
+	text-align: center;
+}
+
+/* End Popup */
 
 .banner-carousel .active .content-box h2{
 	opacity: 1;
@@ -2570,7 +2689,7 @@ img{
     top: -10%;
     height: 120%;
     width: 120%;
-    background-image: url(../images/icons/shape-2.png);
+    background-image: url(../images/background/shape-2.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -2925,7 +3044,7 @@ img{
 	transition: all 500ms ease;
 	text-align: center;
 	overflow: hidden;
-	min-height: 450px;
+	min-height: 580px;
 }
 
 .feature-block .inner-box:hover{
@@ -3061,7 +3180,7 @@ img{
 .icon-shape-3{
 	height: 490px;
 	width: 290px;
-	background-image: url(../images/icons/shape-3.png);
+	background-image: url(../images/background/shape-3.svg);
 	background-size: 100%;
 }
 
@@ -3116,6 +3235,7 @@ img{
 
 .features-section-two .title-block .sec-title{
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .features-section-two .title-block .sec-title .title{
@@ -3140,6 +3260,7 @@ img{
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 	overflow: hidden;
+	min-height: 220px;
 }
 
 .feature-block-two .inner-box:hover{
@@ -4373,7 +4494,7 @@ img{
 	position: relative;
     display: inline-block;
     height: 135px;
-    width: 160px;
+    width: 180px;
     border-radius: 20px;
     background-color: #ffffff;
     font-size: 16px;
@@ -4926,6 +5047,7 @@ img{
     text-align: center;
     display: flex;
     justify-content: center;
+	padding: 10px 0;
 }
 .owl-dots span {
 	position: relative;
