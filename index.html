@@ -12,8 +12,8 @@
     <!--Color Switcher Mockup-->
 
     <link href="css/color-switcher-design.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo_gradient_fav.webp" type="image/x-icon">
+    <link rel="icon" href="images/logo_gradient_fav.webp" type="image/x-icon">
 
     <!-- Responsive -->
 
@@ -83,25 +83,15 @@
 
                                 </li>
 
-                                <li class="dropdown"><a href="about-us.html">About</a>
-
-                                    <ul>
-
-                                        <li><a href="about-us.html">About Us</a></li>
-
-                                        <li><a href="faqs.html">FAQ's</a></li>
-
-										<li><a href="gallery.html">Gallery</a></li>
-
-                                    </ul>
+                                <li class="dropdown">
+                                    
+                                    <a href="about-us.html">About</a>
 
                                 </li>
 
                                 <li class="dropdown"><a href="speakers.html">IP</a>
 
                                     <ul>
-
-                                        <li><a href="social-c-suite.html">Social C-Suite</a></li>
 
                                         <li><a href="global-luxurie-award.html">Global Luxuries Decode</a></li>
 
@@ -112,6 +102,7 @@
                                 </li>
 
                                 <li class="dropdown">
+
                                     <a href="#">Business Conclave</a>
 
                                     <ul>
@@ -204,6 +195,41 @@
 
     <!--End Main Header -->
 
+    <!-- Register Popup -->
+    
+    <div class="overlay" id="overlay">
+        <div class="popup" onclick="event.stopPropagation();">
+            <!-- Popup content -->
+            <h2>Make A Reservation</h2>
+            <form id="registrationForm" method="post" action="#" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <span class="icon fa fa-user"></span>
+                    <input type="text" name="username" id="username" placeholder="Full name" required="">
+                </div>
+    
+                <div class="form-group">
+                    <span class="icon fa fa-envelope"></span>
+                    <input type="email" name="email" id="email" placeholder="Email address" required="">
+                </div>
+    
+                <div class="form-group">
+                    <span class="icon fa fa-phone"></span>
+                    <input type="text" name="phone" id="phone" placeholder="Phone" required="">
+                </div>
+    
+                <div class="form-group">
+                    <span class="icon fa fa-edit"></span>
+                    <textarea name="message" id="message" placeholder="Additional Message"></textarea>
+                </div>
+    
+                <div class="form-group text-right">
+                    <button type="button" class="theme-btn" onclick="closePopup()">Close</button>
+                    <button type="submit" class="theme-btn">Make A Reservation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- Banner Section -->
 
     <section class="banner-section">
@@ -212,7 +238,7 @@
 
             <!-- Slide Item -->
 
-            <div class="slide-item" style="background-image: url(images/main-slider/1.webp);">
+            <div class="slide-item custom" style="background-image: url(images/background/main-banner-3.webp);">
 
                 <div class="auto-container">
 
@@ -220,8 +246,8 @@
 
                         <span class="title">Coming Soon</span>
 
-                        <h2> Social <br>C-Suite</h2>
-
+                        <h2> Celebrating <br /> Social C-Suite Convention and Awards</h2>
+ 
                         <ul class="info-list">
 
                             <li><span class="icon fa fa-chair"></span> 5000 Seats</li>
@@ -232,8 +258,14 @@
 
                         </ul>
 
-                        <div class="btn-box"><a href="buy-ticket.html" class="theme-btn btn-style-two"><span class="btn-title">Make A Reservation</span></a></div>
+                        <!-- <div class="btn-box"><a onclick="openPopup()" class="theme-btn btn-style-two"><span class="btn-title">Make A Reservation</span></a></div> -->
+                        <div class="btn-box"><button type="button" class="theme-btn btn-style-two" onclick="openPopup()"><span class="btn-title">Make A Reservation</span></button></div>
 
+                        <!-- <div class="register-form col-lg-8 col-md-6 col-sm-12">
+                            <div class="form-inner">
+                                <button type="button" class="theme-btn btn-style-four" onclick="openPopup()"><span class="btn-title">Register Now</span></button>
+                            </div>
+                        </div> -->
                     </div>  
 
                 </div>
@@ -244,27 +276,58 @@
 
             <!-- Slide Item -->
 
-            <div class="slide-item" style="background-image: url(images/main-slider/2.jpg);">
+            <div class="slide-item" style="background-image: url(images/background/main-banner-2.webp);">
 
                 <div class="auto-container">
 
                     <div class="content-box">
 
-                        <span class="title">January 20, 2023</span>
+                        <span class="title">December 11, 2016</span>
 
-                        <h2> World Digital <br>Conference 2023</h2>
+                        <h2> World Business <br>Conclave 2016</h2>
 
+                        <ul class="info-list">
+
+                            <li><span class="icon fa fa-chair"></span> 100 Seats</li>
+
+                            <li><span class="icon fa fa-user-alt"></span> 12 SPEAKERS</li>
+
+                            <li><span class="icon fa fa-map-marker-alt"></span> GRAND HYATT, HONG KONG</li>
+
+                        </ul>
+
+                        <div class="btn-box"><button type="button" class="theme-btn btn-style-two" onclick="openPopup()"><span class="btn-title">Book Now</span></button></div>
+                    
+                    </div>  
+
+                </div>
+
+            </div>
+
+
+            <!-- Slide Item -->
+
+            <div class="slide-item" style="background-image: url(images/background/main-banner.webp);">
+
+                <div class="auto-container">
+
+                    <div class="content-box">
+
+                        <span class="title">Coming Soon</span>
+
+                        <h2> Celebrating <br /> Social C-Suite Convention and Awards</h2>
+ 
                         <ul class="info-list">
 
                             <li><span class="icon fa fa-chair"></span> 5000 Seats</li>
 
-                            <li><span class="icon fa fa-user-alt"></span> 12 SPEAKERS</li>
+                            <li><span class="icon fa fa-user-alt"></span> 100+ CXO</li>
 
-                            <li><span class="icon fa fa-map-marker-alt"></span> Palo, California</li>
+                            <li><span class="icon fa fa-map-marker-alt"></span> Delhi, India</li>
 
                         </ul>
 
-                        <div class="btn-box"><a href="buy-ticket.html" class="theme-btn btn-style-two"><span class="btn-title">Book Now</span></a></div>
+                        <div class="btn-box"><button type="button" class="theme-btn btn-style-two" onclick="openPopup()"><span class="btn-title">Make A Reservation</span></button></div>
 
                     </div>  
 
@@ -337,7 +400,7 @@
 
                         </div>
 
-                        <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-three"><span class="btn-title">Register Now</span></a></div>
+                        <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-three"><span class="btn-title">Make A Reservation</span></a></div>
 
                     </div>
 
@@ -395,7 +458,7 @@
 
                         <h4><a href="#">Social C-Suite</a></h4>
 
-                        <div class="text">Personal Profiling is the art of creating an unmatched niche with hybrid marketing strategies. By organically creating a collection of high quality content that reflects your personality, thoughts, opinions & interests.</div>
+                        <div class="text">An initiative to recognise and celebrate business excellence of brands and C-Suite leaders across Asia Pacific region. The stories of remarkable success that have shaped the modern business world.</div>
 
                         <div class="link-box"><a href="#" class="theme-btn">Read More</a></div>
 
@@ -471,41 +534,82 @@
 
             </div>
 
+            
+            <!-- Title Block -->
 
+            <div class="title-block wow fadeInUp">
 
-            <div class="row">
+                <div class="inner-box">
 
-                <!-- Title Block -->
+                    <div class="sec-title">
 
-                <div class="title-block col-lg-4 col-md-12 col-sm-12 wow fadeInUp">
+                        <span class="title">Highlights</span>
 
-                    <div class="inner-box">
-
-                        <div class="sec-title">
-
-                            <span class="title">Features</span>
-
-                            <h2>Our Feature</h2>
-
-                        </div>
+                        <h2>Our Features</h2>
 
                     </div>
 
                 </div>
 
+            </div>
 
+
+
+            <div class="row">
 
                 <!-- Feature Block -->
 
-                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="100ms">
 
                     <div class="inner-box">
 
                         <div class="icon-box"><span class="icon flaticon-lecture"></span></div>
 
-                        <h4><a href="#">Great Speakers</a></h4>
+                        <h4><a href="#">Guest Speakers</a></h4>
 
-                        <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                        <div class="text">Industry luminaries and visionaries sharing invaluable insights and expertise.</div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature Block -->
+
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="100ms">
+
+                    <div class="inner-box">
+
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/sector.svg" alt="">
+                            </span>
+                        </div>
+
+                        <h4><a href="#">Veterans from different sectors</a></h4>
+
+                        <div class="text">Seasoned leaders offering diverse perspectives and experiences.</div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature Block -->
+
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="200ms">
+
+                    <div class="inner-box">
+
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/club-membership.svg" alt="">
+                            </span>
+                        </div>
+
+                        <h4><a href="#">Club membership</a></h4>
+
+                        <div class="text">Exclusive access to a thriving community of like-minded professionals and entrepreneurs.</div>
 
                     </div>
 
@@ -515,21 +619,45 @@
 
                 <!-- Feature Block -->
 
-                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="200ms">
 
                     <div class="inner-box">
 
-                        <div class="icon-box"><span class="icon flaticon-search"></span></div>
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/Media-Coverage.svg" alt="">
+                            </span>
+                        </div>
 
-                        <h4><a href="#">Experience</a></h4>
+                        <h4><a href="#">Media Coverage</a></h4>
 
-                        <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                        <div class="text">Extensive spotlight on noteworthy discussions and achievements reaching a global audience.</div>
 
                     </div>
 
                 </div>
 
 
+
+                <!-- Feature Block -->
+
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="200ms">
+
+                    <div class="inner-box">
+
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/Coffee-Table-Book.svg" alt="">
+                            </span>
+                        </div>
+
+                        <h4><a href="#">Coffee Table Book</a></h4>
+
+                        <div class="text">A celebration of success stories and pioneering journeys.</div>
+
+                    </div>
+
+                </div>
 
                 <!-- Feature Block -->
 
@@ -537,16 +665,55 @@
 
                     <div class="inner-box">
 
-                        <div class="icon-box"><span class="icon flaticon-diamond-1"></span></div>
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/Investors.svg" alt="">
+                            </span>
+                        </div>
 
-                        <h4><a href="#">Networking</a></h4>
+                        <h4><a href="#">Investors Tie Up</a></h4>
 
-                        <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                        <div class="text">Bridging opportunities for growth and strategic partnerships.</div>
 
                     </div>
 
                 </div>
 
+                <!-- Feature Block -->
+
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+
+                    <div class="inner-box">
+
+                        <div class="icon-box"><span class="icon flaticon-employee"></span></div>
+
+                        <h4><a href="#">Networking (1:1)</a></h4>
+
+                        <div class="text">Personalized connections fostering collaborations and synergies.</div>
+
+                    </div>
+
+                </div>
+
+                <!-- Feature Block -->
+
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+
+                    <div class="inner-box">
+
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/Pitch-Tie-Members.svg" alt="">
+                            </span>
+                        </div>
+
+                        <h4><a href="#">Pitch for Tie Members</a></h4>
+
+                        <div class="text">Tailored platforms for members to showcase innovation and ideas.</div>
+
+                    </div>
+
+                </div>
 
 
                 <!-- Feature Block -->
@@ -555,17 +722,60 @@
 
                     <div class="inner-box">
 
-                        <div class="icon-box"><span class="icon flaticon-success"></span></div>
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/Participation.svg" alt="">
+                            </span>
+                        </div>
 
-                        <h4><a href="#">Party</a></h4>
+                        <h4><a href="#">Asia Pacific Participation</a></h4>
 
-                        <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                        <div class="text">Regional integration, diversity, and collective progress.</div>
 
                     </div>
 
                 </div>
 
 
+                <!-- Feature Block -->
+
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+
+                    <div class="inner-box">
+
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/NDTV-Tie-ups.svg" alt="">
+                            </span>
+                        </div>
+
+                        <h4><a href="#">CNBC/NDTV Tie-ups</a></h4>
+
+                        <div class="text">Amplifying credibility through prominent media partnerships.</div>
+
+                    </div>
+
+                </div>
+
+                <!-- Feature Block -->
+
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+
+                    <div class="inner-box">
+
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/Auctions.svg" alt="">
+                            </span>
+                        </div>
+
+                        <h4><a href="#">Auctions</a></h4>
+
+                        <div class="text">Unique opportunities to acquire exclusive offerings and support entrepreneurial endeavors.</div>
+
+                    </div>
+
+                </div>
 
                 <!-- Feature Block -->
 
@@ -573,11 +783,15 @@
 
                     <div class="inner-box">
 
-                        <div class="icon-box"><span class="icon flaticon-employee"></span></div>
+                        <div class="icon-box">
+                            <span class="icon">
+                                <img width="50" height="50" src="/images/icons/icons/Expo.svg" alt="">
+                            </span>
+                        </div>
 
-                        <h4><a href="#">New People</a></h4>
+                        <h4><a href="#">Expo</a></h4>
 
-                        <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                        <div class="text">Showcasing innovation, products, and solutions driving the future of business and entrepreneurship.</div>
 
                     </div>
 
@@ -887,9 +1101,9 @@
 
                             <span class="icon icon_headphones"></span>
 
-                            <span class="count-text" data-speed="3000" data-stop="190">0</span>
+                            <span class="count-text" data-speed="3000" data-stop="200">0</span>
 
-                            <h4 class="counter-title">Participants</h4>
+                            <h4 class="counter-title">Corporate Participants</h4>
 
                         </div>
 
@@ -907,7 +1121,7 @@
 
                             <span class="count-text" data-speed="3000" data-stop="100">0</span>
 
-                            <h4 class="counter-title">Awards Win</h4>
+                            <h4 class="counter-title">Awards</h4>
 
                         </div>
 
@@ -923,7 +1137,7 @@
 
                             <span class="icon icon_like"></span>
 
-                            <span class="count-text" data-speed="3000" data-stop="15">0</span>
+                            <span class="count-text" data-speed="3000" data-stop="10">0</span>
 
                             <h4 class="counter-title">Jury</h4>
 
@@ -941,7 +1155,7 @@
 
                             <span class="icon icon_book_alt"></span>
 
-                            <span class="count-text" data-speed="3000" data-stop="3">0</span>
+                            <span class="count-text" data-speed="3000" data-stop="4">0</span>
 
                             <h4 class="counter-title">Panels</h4>
 
@@ -995,31 +1209,17 @@
 
                         <li class="tab-btn active-btn" data-tab="#tab-1">
 
-                            <span class="day">Chapter 01</span>
+                            <span class="day">Day Itinerary</span>
 
-                            <span class="date">11</span> 
+                            <span class="date">14</span> 
 
-                            <span class="month">Dec</span> 2016
+                            <span class="month">Feb</span> 2024
 
                         </li>
-
-
 
                         <li class="tab-btn" data-tab="#tab-2">
 
-                            <span class="day">Chapter 02</span>
-
-                            <span class="date">24</span>
-
-                            <span class="month">Jun</span> 2017
-
-                        </li>
-
-
-
-                        <li class="tab-btn" data-tab="#tab-3">
-
-                            <span class="day">Chapter 03</span>
+                            <span class="day">Evening Itinerary</span>
 
                             <span class="date">14</span>
 
@@ -1051,35 +1251,15 @@
 
                                     <div class="inner">
 
-                                        <div class="date">9.00 AM <br> 10.00 AM</div>
+                                        <div class="date">11.00 AM <br> 12.00 PM</div>
 
-                                        <div class="speaker-info">
-
-                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <h4><a href="event-detail.html">Check-in</a></h4>
 
                                     </div>
 
                                 </div>
 
                             </div>
-
-
 
                              <!-- schedule Block -->
 
@@ -1089,27 +1269,11 @@
 
                                     <div class="inner">
 
-                                        <div class="date">10.00 AM <br> 11.00 AM</div>
+                                        <div class="date">12.30 PM <br> 12.40 PM</div>
 
-                                        <div class="speaker-info">
+                                        <h4><a href="event-detail.html">Emcee's Announcement</a></h4>
 
-                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <div class="text">Orientation</div>
 
                                     </div>
 
@@ -1117,6 +1281,45 @@
 
                             </div>
 
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">12.45 PM <br> 01.00 PM</div>
+
+                                        <h4><a href="event-detail.html">Lamp-Lighting Ceremony</a></h4>
+
+                                        <div class="text">MD, Chief Guest & Guests of Honour</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block even">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">01.00 PM <br> 01.05 PM</div>
+
+                                        <h4><a href="event-detail.html">Welcome Speech</a></h4>
+
+                                        <div class="text">MD - Stimulus Research Services</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
 
 
                             <!-- schedule Block -->
@@ -1127,27 +1330,11 @@
 
                                     <div class="inner">
 
-                                        <div class="date">11.00 AM <br> 12.00 AM</div>
+                                        <div class="date">01.05 PM <br> 01.20 PM</div>
 
-                                        <div class="speaker-info">
+                                        <h4><a href="event-detail.html">Keynote Speech</a></h4>
 
-                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <div class="text">Cheif Guest & Guests of Honour</div>
 
                                     </div>
 
@@ -1156,8 +1343,7 @@
                             </div>
 
 
-
-                             <!-- schedule Block -->
+                            <!-- schedule Block -->
 
                             <div class="schedule-block even">
 
@@ -1165,27 +1351,11 @@
 
                                     <div class="inner">
 
-                                        <div class="date">12.00 AM <br> 01.00 PM</div>
+                                        <div class="date">01.20 PM <br> 01.25 PM</div>
 
-                                        <div class="speaker-info">
+                                        <h4><a href="event-detail.html">Emcee's Announcement</a></h4>
 
-                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <div class="text">Panel Discussion</div>
 
                                     </div>
 
@@ -1193,11 +1363,154 @@
 
                             </div>
 
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">01.30 PM <br> 02.10 PM</div>
+
+                                        <h4><a href="event-detail.html">Panel Discussion 01</a></h4>
+
+                                        <div class="text">Smart Cities</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block even">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">02.10 PM <br> 03.00 PM</div>
+
+                                        <h4><a href="event-detail.html">Lunch</a></h4>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">03.05 PM <br> 03.35 PM</div>
+
+                                        <h4><a href="event-detail.html">Panel Discussion 02</a></h4>
+
+                                        <div class="text">Make In India</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block even">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">03.35 PM <br> 04.10 PM</div>
+
+                                        <h4><a href="event-detail.html">Tea Break</a></h4>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">04.10 PM <br> 04.40 PM</div>
+
+                                        <h4><a href="event-detail.html">Panel Discussion 03</a></h4>
+
+                                        <div class="text">Learning Goes Digital</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block even">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">04.40 PM <br> 05.00 PM</div>
+
+                                        <h4><a href="event-detail.html">Panelists' Felicitation</a></h4>
+
+                                        <div class="text">Felicitation by MD & Guest of Honour</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">05.00 PM <br> 05.05 PM</div>
+
+                                        <h4><a href="event-detail.html">Thank You Speech</a></h4>
+
+                                        <div class="text">MD - Stimulus Research Services</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
                         </div>
 
                     </div>
-
-
 
                     <!--Tab-->
 
@@ -1213,35 +1526,15 @@
 
                                     <div class="inner">
 
-                                        <div class="date">9.00 AM <br> 10.00 AM</div>
+                                        <div class="date">06.30 PM <br> 07.00 PM</div>
 
-                                        <div class="speaker-info">
-
-                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <h4><a href="event-detail.html">Music & Entertainment</a></h4>
 
                                     </div>
 
                                 </div>
 
                             </div>
-
-
 
                              <!-- schedule Block -->
 
@@ -1251,27 +1544,11 @@
 
                                     <div class="inner">
 
-                                        <div class="date">10.00 AM <br> 11.00 AM</div>
+                                        <div class="date">07.00 PM <br> 07.10 PM</div>
 
-                                        <div class="speaker-info">
+                                        <h4><a href="event-detail.html">Emcee's Speech</a></h4>
 
-                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <div class="text">Orientation</div>
 
                                     </div>
 
@@ -1279,6 +1556,45 @@
 
                             </div>
 
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">07.10 PM <br> 07.15 PM</div>
+
+                                        <h4><a href="event-detail.html">Welcome Speech</a></h4>
+
+                                        <div class="text">CEO - Stimulus Research Services</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block even">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">07.15 PM <br> 07.25 PM</div>
+
+                                        <h4><a href="event-detail.html">Keynote Speeches</a></h4>
+
+                                        <div class="text">Chief Guest & Guests of Honour</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
 
 
                             <!-- schedule Block -->
@@ -1289,27 +1605,11 @@
 
                                     <div class="inner">
 
-                                        <div class="date">11.00 AM <br> 12.00 AM</div>
+                                        <div class="date">07.25 PM <br> 07.45 PM</div>
 
-                                        <div class="speaker-info">
+                                        <h4><a href="event-detail.html">Corporate Presentation by PwC</a></h4>
 
-                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <div class="text">On Methodology of Globe Platinum Awards 2016 & Speech by D&B</div>
 
                                     </div>
 
@@ -1317,130 +1617,26 @@
 
                             </div>
 
-
-
-                             <!-- schedule Block -->
-
-                            <div class="schedule-block even">
-
-                                <div class="inner-box">
-
-                                    <div class="inner">
-
-                                        <div class="date">12.00 AM <br> 01.00 PM</div>
-
-                                        <div class="speaker-info">
-
-                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!--Tab-->
-
-                    <div class="tab" id="tab-3">
-
-                        <div class="schedule-timeline">
 
                             <!-- schedule Block -->
 
-                            <div class="schedule-block">
-
-                                <div class="inner-box">
-
-                                    <div class="inner">
-
-                                        <div class="date">9.00 AM <br> 10.00 AM</div>
-
-                                        <div class="speaker-info">
-
-                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-
-                             <!-- schedule Block -->
-
                             <div class="schedule-block even">
 
                                 <div class="inner-box">
 
                                     <div class="inner">
 
-                                        <div class="date">10.00 AM <br> 11.00 AM</div>
+                                        <div class="date">07.45 PM <br> 08.00 PM</div>
 
-                                        <div class="speaker-info">
+                                        <h4><a href="event-detail.html">Felicitation</a></h4>
 
-                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <div class="text">Chief Guests, Jury & Guests of Honour</div>
 
                                     </div>
 
                                 </div>
 
                             </div>
-
 
 
                             <!-- schedule Block -->
@@ -1451,27 +1647,11 @@
 
                                     <div class="inner">
 
-                                        <div class="date">11.00 AM <br> 12.00 AM</div>
+                                        <div class="date">08.00 PM <br> 08.55 PM</div>
 
-                                        <div class="speaker-info">
+                                        <h4><a href="event-detail.html">Award Commencement</a></h4>
 
-                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <div class="text">Award Ceremony</div>
 
                                     </div>
 
@@ -1479,130 +1659,28 @@
 
                             </div>
 
-
-
-                             <!-- schedule Block -->
-
-                            <div class="schedule-block even">
-
-                                <div class="inner-box">
-
-                                    <div class="inner">
-
-                                        <div class="date">12.00 AM <br> 01.00 PM</div>
-
-                                        <div class="speaker-info">
-
-                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!--Tab-->
-
-                    <div class="tab" id="tab-4">
-
-                        <div class="schedule-timeline">
 
                             <!-- schedule Block -->
 
-                            <div class="schedule-block">
-
-                                <div class="inner-box">
-
-                                    <div class="inner">
-
-                                        <div class="date">9.00 AM <br> 10.00 AM</div>
-
-                                        <div class="speaker-info">
-
-                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-
-                             <!-- schedule Block -->
-
                             <div class="schedule-block even">
 
                                 <div class="inner-box">
 
                                     <div class="inner">
 
-                                        <div class="date">10.00 AM <br> 11.00 AM</div>
+                                        <div class="date">08.55 PM <br> 09.10 PM</div>
 
-                                        <div class="speaker-info">
+                                        <h4><a href="event-detail.html">Unveiling of Publications</a></h4>
 
-                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                        <div class="text">Coffee Table Book, World of Business Magazine and D&B Report</div>
 
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <div class="text">Jury and Guests of Honour</div>
 
                                     </div>
 
                                 </div>
 
                             </div>
-
 
 
                             <!-- schedule Block -->
@@ -1613,27 +1691,9 @@
 
                                     <div class="inner">
 
-                                        <div class="date">11.00 AM <br> 12.00 AM</div>
+                                        <div class="date">09.10 PM <br> 09.20 PM</div>
 
-                                        <div class="speaker-info">
-
-                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <h4><a href="event-detail.html">Motivational Speech</a></h4>
 
                                     </div>
 
@@ -1642,8 +1702,7 @@
                             </div>
 
 
-
-                             <!-- schedule Block -->
+                            <!-- schedule Block -->
 
                             <div class="schedule-block even">
 
@@ -1651,33 +1710,100 @@
 
                                     <div class="inner">
 
-                                        <div class="date">12.00 AM <br> 01.00 PM</div>
+                                        <div class="date">09.20 PM <br> 10.10 PM</div>
 
-                                        <div class="speaker-info">
+                                        <h4><a href="event-detail.html"></a>Resumption of Awards Felicitation</h4>
 
-                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
-
-                                            <h5 class="name">Ashli Scroggy</h5>
-
-                                            <span class="designation">Founder & CEO</span>
-
-                                        </div>
-
-                                        <h4><a href="event-detail.html">Modern Marketing Summit Sydney 2018</a></h4>
-
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et</div>
-
-                                        <div class="btn-box">
-
-                                            <a href="event-detail.html" class="theme-btn">Read More</a>
-
-                                        </div>
+                                        <div class="text">Award Ceremony</div>
 
                                     </div>
 
                                 </div>
 
                             </div>
+
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">10.10 PM <br> 10.30 PM</div>
+
+                                        <h4><a href="event-detail.html">Entertainment</a></h4>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block even">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">10.30 PM <br> 11.10 PM</div>
+
+                                        <h4><a href="event-detail.html">Resumption of Awards Felicitation</a></h4>
+
+                                        <div class="text">Award Ceremony</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">11.10 PM <br> 11.20 PM</div>
+
+                                        <h4><a href="event-detail.html">Promo Video of Next Event</a></h4>
+
+                                        <div class="text">Luxury Decode</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- schedule Block -->
+
+                            <div class="schedule-block">
+
+                                <div class="inner-box">
+
+                                    <div class="inner">
+
+                                        <div class="date">11.20 PM <br> 11.30 PM</div>
+
+                                        <h4><a href="event-detail.html">Thank You Speech</a></h4>
+
+                                        <div class="text">MD - Stimulus Research Services</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
 
                         </div>
 
@@ -2047,6 +2173,53 @@
 
                     </div>
 
+
+                    <!-- Client Block -->
+
+                    <div class="client-block col-lg-2 col-md-6 col-sm-12">
+
+                        <figure class="image-box"><a href="#"><img src="images/clients/deloitte.png" alt=""></a></figure>
+
+                    </div>
+
+
+
+                    <!-- Client Block -->
+
+                    <div class="client-block col-lg-2 col-md-6 col-sm-12">
+
+                        <figure class="image-box"><a href="#"><img src="images/clients/ibpg.jpg" alt=""></a></figure>
+
+                    </div>
+
+
+
+                    <!-- Client Block -->
+
+                    <div class="client-block col-lg-2 col-md-6 col-sm-12">
+
+                        <figure class="image-box"><a href="#"><img src="images/clients/icc.jpg" alt=""></a></figure>
+
+                    </div>
+
+
+
+                    <!-- Client Block -->
+
+                    <div class="client-block col-lg-2 col-md-6 col-sm-12">
+
+                        <figure class="image-box"><a href="#"><img src="images/clients/nmc.png" alt=""></a></figure>
+
+                    </div>
+
+                    <!-- Client Block -->
+
+                    <div class="client-block col-lg-2 col-md-6 col-sm-12">
+
+                        <figure class="image-box"><a href="#"><img src="images/clients/uaexchange.jpg" alt=""></a></figure>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -2081,7 +2254,7 @@
 
                                 <div class="icon-box"><span class="icon flaticon-rocket-ship"></span></div>
 
-                                <h2>REGISTER NOW</h2>
+                                <h2>Make A Reservation</h2>
 
                                 <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt labore et dolore magna.</div>
 
@@ -2911,6 +3084,35 @@
 <!-- Color Setting -->
 
 <script src="js/color-settings.js"></script>
+
+<script>
+    function validateForm() {
+        var username = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+
+        // Add more validation logic as needed
+
+        if (username.trim() === '' || email.trim() === '' || phone.trim() === '') {
+            alert('Please fill in all required fields.');
+            return false;
+        }
+
+        // Additional validation logic can be added here
+
+        // If all validation passes, you can submit the form
+        return true;
+    }
+
+    function openPopup() {
+        document.getElementById('overlay').style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('overlay').style.display = 'none';
+    }
+</script>
+
 
 </body>
 </html>
